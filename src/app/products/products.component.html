@@ -1,0 +1,57 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <button mat-raised-button class="btn btn-primary" (click)="dialogAddProduct()">Add Product</button>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                  <th>
+                                      Name
+                                  </th>
+                                  <th>
+                                      Barcode
+                                  </th>
+                                  <th>
+                                      Price
+                                  </th>
+                                  <th>
+                                      Stock Amount
+                                  </th>
+                                  <th>
+                                      Action
+                                  </th>
+                              </thead>
+                              <tbody>
+                                  <tr *ngFor="let product of products">
+                                      <td>
+                                          {{product.name}}
+                                      </td>
+                                      <td>
+                                          {{product.barcode}}
+                                      </td>
+                                      <td>
+                                          P{{product.price}}
+                                      </td>
+                                      <td class="text-primary">
+                                          {{product.quantity}}
+                                      </td>
+                                      <td>
+                                          
+                                      </td>
+                                  </tr>
+                                  
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
